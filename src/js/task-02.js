@@ -9,12 +9,10 @@ const ingredients = [
 
 const ulTag = document.getElementById("ingredients");
 console.log(ulTag);
-
-const styleEl = document.querySelectorAll("style");
+ulTag.classList.add("item");
 
 ingredients.forEach(function (e) {
   const liTagName = document.createElement("li");
   liTagName.innerText = e;
-
   ulTag.append(liTagName);
 });
